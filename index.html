@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius</title>
+    <!-- tail wind and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mx-8">
+    <header></header>
+    <main>
+      <!-- main content container -->
+      <div class="flex flex-col md:flex-row my-8">
+        <!-- card container -->
+        <div
+          class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2"
+        >
+          <!-- card-1 triangle -->
+          <div class="card w-80 shadow-xl bg-orange-100 pt-2">
+            <figure>
+              <img src="images/triangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center font-bold">Triange</h2>
+              <p class="text-center font-semibold">Area (A) = 0.5*b*h</p>
+              <div class="text-center my-4">
+                <input
+                  class="w-20 px-2 py-1 rounded-lg"
+                  type="text"
+                  name=""
+                  id="triangle-base"
+                  placeholder="b"
+                /><span class="ml-2">cm</span>
+                <input
+                  class="w-20 px-3 py-1 rounded-lg ml-8"
+                  type="text"
+                  name=""
+                  id="triangle-height"
+                  placeholder="h"
+                /><span class="ml-2">cm</span>
+              </div>
+              <div class="text-center">
+                <h2 class="text-3xl">
+                  Area : <span id="triangle-area"></span>
+                  <span>cm <sup>2</sup></span>
+                </h2>
+              </div>
+              <div class="card-actions justify-end">
+                <button
+                  onclick="triangleCalculateArea()"
+                  class="btn btn-primary w-full text-3xl"
+                >
+                  Calcutale
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card-2 rectangle -->
+          <div class="card w-80 shadow-xl bg-orange-100 pt-2">
+            <figure>
+              <img src="images/rectangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center font-bold">Rectangle</h2>
+              <p class="text-center font-semibold">Area (A) = *w*l</p>
+              <div class="text-center my-4">
+                <input
+                  class="w-20 px-2 py-1 rounded-lg"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="w"
+                /><span class="ml-2">cm</span>
+                <input
+                  class="w-20 px-3 py-1 rounded-lg ml-8"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="l"
+                /><span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary w-full text-3xl">
+                  Calcutale
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card-3 parallelogram -->
+          <div class="card w-80 shadow-xl bg-orange-100 pt-2">
+            <figure>
+              <img src="images/parallelogram.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center font-bold">Parallelogram</h2>
+              <p class="text-center font-semibold">Area (A) = *b*π</p>
+              <div class="text-center my-4">
+                <input
+                  class="w-20 px-2 py-1 rounded-lg"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="b"
+                /><span class="ml-2">cm</span>
+                <input
+                  class="w-20 px-3 py-1 rounded-lg ml-8"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="π"
+                /><span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary w-full text-3xl">
+                  Calcutale
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- area calculation container -->
+        <div class="my-4 md:my-0">
+          <h3 class="text-3xl border-4 px-4 h-96">Area calculation</h3>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="scripts/triangle_calculate.js"></script>
+    <script></script>
+  </body>
+</html>
